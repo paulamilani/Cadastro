@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Formulario">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Cadastro" />
+
+    <EditText
+        android:id="@+id/textoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome completo"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/textoPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/textoEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/selecionadoEmailCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingressar na lista de e-mails?" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/ufSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/uf" />
+
+
+    <EditText
+        android:id="@+id/textCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/salvarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/limparBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="Limpar"
+        android:onClick="limpaCampos" />
+
+</LinearLayout>
