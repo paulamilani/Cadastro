@@ -10,28 +10,40 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Cadastro" />
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="Nome Completo" />
 
     <EditText
         android:id="@+id/textoName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome completo"
         android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="Telefone" />
 
     <EditText
         android:id="@+id/textoPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Telefone"
         android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="E-mail" />
 
     <EditText
         android:id="@+id/textoEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail"
         android:inputType="text" />
 
     <CheckBox
@@ -39,6 +51,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingressar na lista de e-mails?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="Sexo" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -61,18 +80,30 @@
             android:text="Feminino" />
     </RadioGroup>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="UF" />
+
     <Spinner
         android:id="@+id/ufSp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/uf" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:text="Cidade" />
 
     <EditText
         android:id="@+id/textCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cidade"
         android:inputType="text" />
 
     <Button
