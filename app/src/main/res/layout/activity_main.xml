@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="Nome Completo" />
 
@@ -18,12 +17,13 @@
         android:id="@+id/textoName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:labelFor="@+id/textoName"
         android:inputType="text" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="Telefone" />
 
@@ -31,12 +31,13 @@
         android:id="@+id/textoPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:labelFor="@+id/textoPhone"
+        android:inputType="phone" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="E-mail" />
 
@@ -44,7 +45,7 @@
         android:id="@+id/textoEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:inputType="textEmailAddress" />
 
     <CheckBox
         android:id="@+id/selecionadoEmailCb"
@@ -55,7 +56,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="Sexo" />
 
@@ -83,7 +84,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="UF" />
 
@@ -96,7 +97,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_margin="5dp"
         android:text="Cidade" />
 
@@ -106,19 +107,27 @@
         android:layout_height="wrap_content"
         android:inputType="text" />
 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
     <Button
         android:id="@+id/salvarBtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_marginHorizontal="5dp"
         android:text="Salvar" />
 
     <Button
         android:id="@+id/limparBtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_marginHorizontal="5dp"
-        android:text="Limpar"
-        android:onClick="limpaCampos" />
+        android:onClick="limpaCampos"
+        android:text="Limpar" />
 
+    </LinearLayout>
 </LinearLayout>
